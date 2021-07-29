@@ -54,41 +54,47 @@ header{
 }
 
 h1{
-    /* float: left; */
+    float: left;
     font-size: 40px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 nav{
     float: right;
     font-size: 20px;
+    margin-top: 0 auto;
     
 
 }
-p {
-    background-color: fuchsia;
-    font-size: 20px;
+main{
+    height: 500px;
+    border: 2px solid black;
+}
+article{
+    width:300px;
+    height: 400px;
+    
+    float: left;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+aside{
+    width:500px;
+    height: 400px;
+    
+    float: right;
+    margin-right: 200px;
+    margin-top: 40px;
 }
 img{
-    width: 400px;
-    height: 400px;
-    text-align: right;
-    border-radius: 20%;
-    padding: 50px;
-
-
+    width: 500px;
+    height:300px;
 }
+
 footer{
-   
-    padding: 300px;
-    margin: 30px;
-
+    background-color: aqua;
+    height: 50px;
 }
-
-.col{
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-    padding: 60px;
+small{
+    float: left;
 }
-
 
