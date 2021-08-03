@@ -1,3 +1,5 @@
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,70 +49,97 @@ table {
 	border-spacing: 0;
 }
 
-/*Custom*/
+    *,
+    *::before,
+    *::after{
+        box-sizing: border-box;
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
-}
+    }
+    body{
+        line-height: 1.5;
+        font-size: 16px;
 
-.clearfix::before, .clearfix::after {
-    content: "";
-    display: table;
-}
-
-.clearfix::after {
-    clear: both;
-}
-
-header {
-    background-color: hotpink;
-    height: 50px;
-}
-
-h1 {
-    float: left;
-    font-size: 40px;
-    padding: 10px;
-}
-
-nav {
-    float: right;
-    font-size: 20px;
-    margin-top: 0 auto;
-    padding: 10px;
-}
-
-/* Main */
-
-.col {
-    float: left;
-    width: 30%;
-    margin: 0 1.5%;
-}
-
-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-
-/* Footer */
-
-footer {
-    background-color: hotpink;
-    height: 50px;
-}
-
-small {
-    float: left;
-    padding: 10px;
-
-}
-
-a {
-    float: right;
-    padding: 10px;
-}
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 32px;
+        
+    }
+    .header{
+        background-color: rgb(156, 165, 248);
+       height: 92px;
+       /* line-height: 72px; */
+    }
+    .brand{
+        float: left;
+        font-size: 40px;
+        margin-top: 10px;
+        font-weight: 500;
+        
+    }
     
+    .nav{
+        float: right;
+        margin-top: 20px;
+    }
+    .clearfix::before,.clearfix::after{
+        content: "";
+        display: table;
+    }
+    .clearfix::after{
+        clear: both;
+    }
+    .nav a{
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 12px;
+        /*  */
+        padding: 10px;
+    }
+    
+    .brand{
+        position: relative;
+        
+    }
+    /*article*/
+    .section{
+        padding: 60px 0;
+        background-color:rgb(231, 209, 231) ;
+    }
+    .article-img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .col{
+        float: left;
+        width: 30%;
+        margin: 0 1.5%;
+    
+
+    }
+    p{
+        font-size: 20px;
+        margin-top: 24px;
+        line-height: 1.7;
+    }
+    .footer{
+        background-color: rgb(156, 165, 248);;
+        padding: 32px 0;
+        color: white;
+    }
+    .footer small{
+        float: left;
+    }
+    .footer nav{
+        float: right;
+    }
+    .footer a{
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        margin-left: 32px;
+    }
